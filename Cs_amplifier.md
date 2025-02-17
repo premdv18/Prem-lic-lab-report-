@@ -59,16 +59,17 @@ Modes of Operation of MOSFETs
 ## Inference
 
 1. AC Gain:
-The AC gain of a CS amplifier is determined by the values of resistors (RD, RL) and the transistor parameters (such as the transconductance gm). The AC gain can be approximated as:
-A_v ≈ -gm * RD
-Changing the width (W) and length (L) of the MOSFET affects the transconductance (gm), thus influencing the gain. A larger W/L ratio typically increases gm and, consequently, the AC gain.
+AC gain depends on transconductance (gm) and resistors. A larger W/L ratio increases gm and boosts gain.
 
 
 2. DC Bias Point:
-The DC bias point is set by the gate-source voltage (V_GS) and the drain-source voltage (V_DS). In a CS amplifier, the MOSFET operates in the saturation region under normal conditions. The biasing can be adjusted using resistors and the power supply voltage. Changes in W/L will affect the MOSFET's threshold voltage and operating point, which might shift the bias point. For a stable DC bias point, the correct selection of W/L ratio and external biasing resistors is essential.
+Bias point is influenced by V_GS and V_DS. W/L changes affect the operating point and stability.
+
 
 3. Transient Analysis:
-Transient analysis shows the time-domain response of the amplifier, typically showing the amplifier’s behavior when subjected to an input signal. The response is influenced by the MOSFET's intrinsic capacitances, the values of resistors, and the coupling capacitors. As the W/L ratio of the MOSFET increases, the overall current drive capability increases, affecting the rise and fall times in the transient response. A larger W/L ratio improves the device's ability to handle larger signals with faster transitions, reducing distortion in the transient response.
+Transient response is affected by W/L, with a larger ratio improving signal handling and reducing distortion.
+
+
 
 
 Changing the MOSFET’s width (W) and length (L) will directly influence these parameters. A larger W results in higher transconductance (gm), improving the gain and transient response, while a smaller L helps reduce channel length modulation, stabilizing the bias point.
